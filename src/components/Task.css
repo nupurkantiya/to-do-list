@@ -1,0 +1,46 @@
+.task {
+  background-color: #fdfcfe;
+  border: 1px solid #5a5a5a;
+  padding: 0.1rem 0.6rem;
+  width: 100px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+  transition: all 0.2s ease-in-out;
+  color: #000; /* Set font color to black */
+  font-weight: 200;
+}
+
+.task:hover {
+  background-color: #55a0ec;
+}
+
+.task span {
+  flex: 1;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+  color: #050505; /* Ensure span text is black */
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  color: #868e96;
+}
+
+.task button {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 2px;
+  color: #ff4d4f;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.task button:hover {
+  color: #f40505;
+}

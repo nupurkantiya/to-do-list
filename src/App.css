@@ -1,0 +1,123 @@
+/* src/App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1a1c1e;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 400px;
+  padding: 40px 40px;
+  border: 2px solid #676363;
+  border-radius: 5%;
+}
+
+h1 {
+  color: #0077ff;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Input and button container */
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input[type="text"] {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  width: 250px;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #0077ff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005dd1;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+select {
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.task {
+  background-color: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .task .delete-btn {
+  background: none;
+  border: none;
+  color: #ff4d4d;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.task .delete-btn:hover{
+  transform: rotate(90deg);
+}   */
+
+.task .delete-btn {
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.task .delete-btn:hover {
+  transform: rotate(90deg);
+}
+
